@@ -1,3 +1,5 @@
+# Explanation: This file refines the Graph RAG workflow from version 8.
+
 """
 1. GraphRAGStore Class:
 Initializes a graph using NetworkX and sets up attributes for communities, documents, and maximum cluster size.

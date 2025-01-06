@@ -1,3 +1,5 @@
+# Explanation: This file provides a second variant of LangChain-based Graph RAG demo.
+
 # %% [markdown]
 # install required packages
 

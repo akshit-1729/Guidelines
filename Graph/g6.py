@@ -1,3 +1,5 @@
+# Explanation: This file builds or loads knowledge and vector indexes for further querying.
+
 # 1. Preparation
 
 ## 1.1 Prepare for LLM

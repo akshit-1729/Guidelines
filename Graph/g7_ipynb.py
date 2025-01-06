@@ -1,3 +1,4 @@
+# Explanation: This script uses notebook-style code to illustrate graph querying techniques.
 # %%
 # 1. Preparation
 

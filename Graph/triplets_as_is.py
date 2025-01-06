@@ -1,33 +1,4 @@
-# import json
-
-# # Load the JSON-LD file
-# with open('/Users/akshit/Documents/Projects/Python-all/information-extraction/Guidelines/Data/NCCN_prostate_4.2024_Graph_12_33.json', 'r', encoding='utf-8') as f:
-#     data = json.load(f)
-
-# # Relationships to extract
-# relationships = [
-#     'nccn:page-key', 'nccn:labels', 'nccn:content', 'nccn:next', 'nccn:prev',
-#     'nccn:parent', 'nccn:reference', 'nccn:contains'
-# ]
-
-# # Iterate over each node in the @graph
-# for node in data.get('@graph', []):
-#     source = node.get('@id')
-#     if not source:
-#         continue
-#     for relationship in relationships:
-#         if relationship in node:
-#             targets = node[relationship]
-#             # Ensure targets is a list
-#             if not isinstance(targets, list):
-#                 targets = [targets]
-#             for target in targets:
-#                 # Get the target @id or value
-#                 if isinstance(target, dict) and '@id' in target:
-#                     target_value = target['@id']
-#                 else:
-#                     target_value = target
-#                 print(f"Source: {source}, Relationship: {relationship}, Target: {target_value}")
+# Explanation: This file extracts or handles triplets for graph processing.
 
 import json
 

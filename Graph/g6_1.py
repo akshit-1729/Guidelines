@@ -18,8 +18,7 @@ from llama_index.core.query_engine import KnowledgeGraphQueryEngine
 from llama_index.core import get_response_synthesizer
 from llama_index.core.query_engine import RetrieverQueryEngine
 
-
-
+# Explanation: This file showcases a modified version of g6 with different retrieval methods.
 
 
 # %%

@@ -1,3 +1,4 @@
+# Explanation: This script implements version 8 of a Graph RAG approach for data querying.
 import networkx as nx
 from graspologic.partition import hierarchical_leiden
 from typing import List, Dict, Any, Optional, Tuple
