@@ -1,0 +1,39 @@
+digraph G {
+  rankdir=LR;
+  node [style=filled];
+  "Bone and soft tissue imaging" [label="Bone and soft tissue imaging", fillcolor="#ADD8E6"];
+  "If regional or distant metastases are found" [label="If regional or distant metastases are found", fillcolor="#90EE90"];
+  "Bone imaging" [label="Bone imaging", fillcolor="#ADD8E6"];
+  "Conventional technetium-99m-MDP bone scan" [label="Conventional technetium-99m-MDP bone scan", fillcolor="#90EE90"];
+  "CT" [label="CT", fillcolor="#90EE90"];
+  "MRI" [label="MRI", fillcolor="#90EE90"];
+  "PSMA-PET/CT" [label="PSMA-PET/CT", fillcolor="#90EE90"];
+  "PSMA-PET/MRI" [label="PSMA-PET/MRI", fillcolor="#90EE90"];
+  "PET/CT" [label="PET/CT", fillcolor="#90EE90"];
+  "PET/MRI with F-18 sodium fluoride" [label="PET/MRI with F-18 sodium fluoride", fillcolor="#90EE90"];
+  "C-11 choline" [label="C-11 choline", fillcolor="#90EE90"];
+  "F-18 fluciclovine" [label="F-18 fluciclovine", fillcolor="#90EE90"];
+  "Bone and soft tissue imaging" -> "If regional or distant metastases are found" [label="condition\nis performed\n(Doc: doc1)", color="#7f3f3f"];
+  "Bone imaging" -> "Conventional technetium-99m-MDP bone scan" [label="can be achieved by\nuses\n(Doc: doc1)", color="#3f7f7f"];
+  "Bone imaging" -> "CT" [label="can be achieved by\nuses\n(Doc: doc1)", color="#3f7f7f"];
+  "Bone imaging" -> "MRI" [label="can be achieved by\nuses\n(Doc: doc1)", color="#3f7f7f"];
+  "Bone imaging" -> "PSMA-PET/CT" [label="can be achieved by\nuses\n(Doc: doc1)", color="#3f7f7f"];
+  "Bone imaging" -> "PSMA-PET/MRI" [label="can be achieved by\nuses\n(Doc: doc1)", color="#3f7f7f"];
+  "Bone imaging" -> "PET/CT" [label="can be achieved by\nuses\n(Doc: doc1)", color="#3f7f7f"];
+  "Bone imaging" -> "PET/MRI with F-18 sodium fluoride" [label="can be achieved by\nuses\n(Doc: doc1)", color="#3f7f7f"];
+  "Bone imaging" -> "C-11 choline" [label="can be achieved by\nuses\n(Doc: doc1)", color="#3f7f7f"];
+  "Bone imaging" -> "F-18 fluciclovine" [label="can be achieved by\nuses\n(Doc: doc1)", color="#3f7f7f"];
+  subgraph cluster_legend {
+    label = "Legend";
+    node [shape=box];
+    "Subject" [fillcolor="#ADD8E6"];
+    "Object" [fillcolor="#90EE90"];
+    "Both" [fillcolor="#FFA500"];
+    "condition" [shape=plaintext, fillcolor="white"];
+    "dummy_condition" [shape=point, style=invis];
+    "dummy_condition" -> "condition" [color="#7f3f3f"];
+    "can be achieved by" [shape=plaintext, fillcolor="white"];
+    "dummy_can be achieved by" [shape=point, style=invis];
+    "dummy_can be achieved by" -> "can be achieved by" [color="#3f7f7f"];
+  }
+}
